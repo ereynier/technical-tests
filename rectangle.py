@@ -6,6 +6,7 @@ def rectangle(a, b):
         b = int(b)
     except:
         print ("Error")
+        return
     if a <= 0 or b <= 0:
         print ("Error")
         return
