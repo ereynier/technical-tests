@@ -74,11 +74,10 @@ if __name__ == "__main__":
     if len(argv) != 2:
         print("Error")
     else:
-        with open(argv[1], "r") as f:
-            file = f.read()
-        square(file)
         try:
-            pass
+            with open(argv[1], "r") as f:
+                file = f.read()
+            square(file)
         except Exception as e:
             print(f"Error: {e}")
 
